@@ -15,7 +15,7 @@
         <li><a href="#usage">Usage</a></li>
         <li><a href="#proposed-features">Proposed Features</a></li>
         <li><a href="#license">License</a></li>
-        <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
+        <li><a href="#acknowledgments">Acknowledgments</a></li>
       </ul>
     </details>
 </div>
@@ -120,8 +120,8 @@ Distributed under the GNU AGPLv3 License. See `LICENSE.txt` for more information
 
 <!-- ACKNOWLEDGMENTS -->
 
-<!-- ## Acknowledgments
+## Acknowledgments
 
--
+-   [README Template](https://github.com/othneildrew/Best-README-Template)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
