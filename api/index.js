@@ -28,8 +28,12 @@ const routes = [
 	{
 		path: `/api/url/${SITE_URL}`,
 		handler: async (req, res) => {
-			const data = await scrapeTestSite(SITE_URL);
-			res.json({ requested_url: SITE_URL, data });
+			try {
+				const data = await scrapeTestSite(SITE_URL);
+				res.json({ requested_url: SITE_URL, data });
+			} catch (err) {
+				res.json({ requested_url: SITE_URL, error: err.message });
+			}
 		},
 	},
 	{
