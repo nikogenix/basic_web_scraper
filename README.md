@@ -47,7 +47,9 @@
 <!-- BADGES -->
 <!-- https://ileriayo.github.io/markdown-badges/ -->
 
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) (WIP)
+-   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+-   ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+-   ![Puppeteer](https://img.shields.io/badge/puppeteer-005942?style=for-the-badge&logo=puppeteer)
 
 ### Frontend Built With
 
@@ -103,10 +105,11 @@
 
 ## Proposed Features
 
--   [ ] summary of articles based on the subtitles and the info written in bold inside lists
--   [ ] filter based on submission date
+-   [x] summary of articles based on the subtitles and the info written in bold inside lists
+-   [ ] filter/sort based on submission date
 -   [ ] filter based on the author profile (blogger, enthusiast, critic, etc.)
--   [ ] WIP
+-   [ ] download scraped data
+-   [ ] email subscription for daily/weekly scraped data
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
