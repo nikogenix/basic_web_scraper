@@ -32,7 +32,7 @@ const routes = [
 				const data = await scrapeTestSite(SITE_URL);
 				res.json({ requested_url: SITE_URL, data });
 			} catch (err) {
-				res.json({ requested_url: SITE_URL, error: err.message });
+				res.status(503).json({ requested_url: SITE_URL, error: err.message });
 			}
 		},
 	},
