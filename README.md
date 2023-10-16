@@ -53,7 +53,9 @@
 
 ### Frontend Built With
 
-(WIP)
+-   [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+-   [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+-   ![Tailwind](https://img.shields.io/badge/tailwind-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,17 +85,42 @@
 
 ### Starting the project
 
--   ```sh
-    npm start
-    ```
+-   for the API, `cd` to the appropriate directory and:
 
-    ...or to run in dev mode with nodemon
+    -   ```sh
+        npm start
+        ```
 
--   ```sh
-    npm run dev
-    ```
+        ...or to run in dev mode with nodemon
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+    -   ```sh
+        npm run dev
+        ```
+
+        ...and the project will be available at http://localhost:4000/
+
+-   for the frontend, `cd` to the appropriate directory and:
+
+    -   ```sh
+        npm run build
+        npm run preview
+        ```
+
+    ...or to run in dev mode
+
+    -   ```sh
+        npm run dev
+        ```
+
+    ...or to access the project on mobile
+
+    -   ```sh
+        npm run dev -- --host
+        ```
+
+    ...and the address where the project is running will be shown in the console
+
+    <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
@@ -105,7 +132,7 @@
 
 ## Proposed Features
 
--   [x] summary of articles based on the subtitles and the info written in bold inside lists
+-   [x] summary of articles based on the subtitles and the info written in bold inside lists (added in the API response as 'highlights')
 -   [ ] filter/sort based on submission date
 -   [ ] filter based on the author profile (blogger, enthusiast, critic, etc.)
 -   [ ] download scraped data
@@ -126,5 +153,6 @@ Distributed under the GNU AGPLv3 License. See `LICENSE.txt` for more information
 ## Acknowledgments
 
 -   [README Template](https://github.com/othneildrew/Best-README-Template)
+-   [Flowbite](https://flowbite.com/) - inspiration for some Tailwind styling and source for SVG icons
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
