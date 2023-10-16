@@ -11,8 +11,8 @@ app.use(cors());
 
 dotenv.config({ path: "../config/.env" });
 
-const PORT = process.env.API_PORT;
-const SITE_URL = process.env.SCRAPING_TEST_URL;
+const PORT = process.env.VITE_API_PORT;
+const SITE_URL = process.env.VITE_SCRAPING_TEST_URL;
 const local_usage = [`http://localhost:${PORT}/api/url/${SITE_URL}`];
 
 const apiUrlPattern =
