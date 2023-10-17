@@ -97,7 +97,7 @@
         npm run dev
         ```
 
-        ...and the project will be available at http://localhost:4000/
+    ...and the project will be available at http://localhost:4000/
 
 -   for the frontend, `cd` to the appropriate directory and:
 
@@ -157,33 +157,33 @@ With only the API running, results can be retrieved by going to [http://localhos
 
 -   ```json
     {
-        requested_url: "https://wsa-test.vercel.app/",
-        data: [
-            {
-                title: "The Joys of Gardening",
-                short_description: "Explore the enriching world of gardening and discover its positive impact on mood and well-being.",
-                category: "Lifestyle",
-                author: {
-                    name: "Alex Green",
-                    title: "Gardening Enthusiast"
-                },
-                image: "https://wsa-test.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgarden.8d6b6c5f.webp&w=3840&q=75",
-                url: "https://wsa-test.vercel.app/blog/the-joys-of-gardening",
-                submission_date: "2023-09-12",
-                intro: "Gardening is indeed a joyful and rewarding hobby. It is not just an activity but a form of art that brings happiness and a positive vibe to your surroundings. Let's delve into the serene world of gardening and the plethora of benefits it brings along.",
-                word_count: 207,
-                highlights: [
-                    "Positive Mood",
-                    "Health Benefits",
-                    "Connection with Nature",
-                    "Start with Easy-to-Grow Plants",
-                    "Proper Watering",
-                    "Pest Control"
-                ],
-                sentiment: "positive"
-            },
-            { ... }
-        ]
+    	"requested_url": "https://wsa-test.vercel.app/",
+    	"data": [
+    		{
+    			"title": "The Joys of Gardening",
+    			"short_description": "Explore the enriching world of gardening and discover its positive impact on mood and well-being.",
+    			"category": "Lifestyle",
+    			"author": {
+    				"name": "Alex Green",
+    				"title": "Gardening Enthusiast"
+    			},
+    			"image": "https://wsa-test.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgarden.8d6b6c5f.webp&w=3840&q=75",
+    			"url": "https://wsa-test.vercel.app/blog/the-joys-of-gardening",
+    			"submission_date": "2023-09-12",
+    			"intro": "Gardening is indeed a joyful and rewarding hobby. It is not just an activity but a form of art that brings happiness and a positive vibe to your surroundings. Let's delve into the serene world of gardening and the plethora of benefits it brings along.",
+    			"word_count": 207,
+    			"highlights": [
+    				"Positive Mood",
+    				"Health Benefits",
+    				"Connection with Nature",
+    				"Start with Easy-to-Grow Plants",
+    				"Proper Watering",
+    				"Pest Control"
+    			],
+    			"sentiment": "positive"
+    		},
+    		{...}
+    	]
     }
     ```
 
