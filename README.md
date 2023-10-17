@@ -4,7 +4,7 @@
 
 <!-- TABLE OF CONTENTS -->
 
-## basic_web_scraper (WIP)
+## basic_web_scraper
 
 <div>
     <details>
@@ -124,7 +124,74 @@
 
 <!-- USAGE EXAMPLES -->
 
-## Usage (WIP)
+## Usage
+
+With only the API running, results can be retrieved by going to [http://localhost:4000/](http://localhost:4000/):
+
+> using an unknown endpoint or invalid input - ex.: `/` OR `/api/url/thisIsNotAValidSite`
+
+-   ```json
+    {
+    	"error": "unknown endpoint or invalid input",
+    	"supported": {
+    		"local_usage": ["http://localhost:4000/api/url/https://wsa-test.vercel.app/"],
+    		"frontend_input": ["https://wsa-test.vercel.app/"]
+    	}
+    }
+    ```
+
+> entering a valid but unsupported URL - ex.: `/api/url/https://www.example.com/`
+
+-   ```json
+    {
+    	"requested_url": "https://www.example.com",
+    	"error": "unsupported URL",
+    	"supported": {
+    		"local_usage": ["http://localhost:4000/api/url/https://wsa-test.vercel.app/"],
+    		"frontend_input": ["https://wsa-test.vercel.app/"]
+    	}
+    }
+    ```
+
+> entering a valid and supported URL - ex.: `/api/url/https://wsa-test.vercel.app/`
+
+-   ```json
+    {
+        requested_url: "https://wsa-test.vercel.app/",
+        data: [
+            {
+                title: "The Joys of Gardening",
+                short_description: "Explore the enriching world of gardening and discover its positive impact on mood and well-being.",
+                category: "Lifestyle",
+                author: {
+                    name: "Alex Green",
+                    title: "Gardening Enthusiast"
+                },
+                image: "https://wsa-test.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgarden.8d6b6c5f.webp&w=3840&q=75",
+                url: "https://wsa-test.vercel.app/blog/the-joys-of-gardening",
+                submission_date: "2023-09-12",
+                intro: "Gardening is indeed a joyful and rewarding hobby. It is not just an activity but a form of art that brings happiness and a positive vibe to your surroundings. Let's delve into the serene world of gardening and the plethora of benefits it brings along.",
+                word_count: 207,
+                highlights: [
+                    "Positive Mood",
+                    "Health Benefits",
+                    "Connection with Nature",
+                    "Start with Easy-to-Grow Plants",
+                    "Proper Watering",
+                    "Pest Control"
+                ],
+                sentiment: "positive"
+            },
+            { ... }
+        ]
+    }
+    ```
+
+And with both the API and the frontend running, results can be shown and filtered on the site:
+
+<p align="center">
+  <img src="./web_scraper_demo.JPG" alt="project frontend demo"/>
+</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,7 +201,8 @@
 
 -   [x] summary of articles based on the subtitles and the info written in bold inside lists (added in the API response as 'highlights')
 -   [ ] filter/sort based on submission date
--   [ ] filter based on the author profile (blogger, enthusiast, critic, etc.)
+-   [x] filter based on the author profile (blogger, enthusiast, critic, etc.) or name
+-   [x] filter based on the category (lifestyle, urban life, etc.)
 -   [ ] download scraped data
 -   [ ] email subscription for daily/weekly scraped data
 
