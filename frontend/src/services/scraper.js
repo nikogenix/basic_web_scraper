@@ -23,9 +23,15 @@ const WEBSCRAPER_API = import.meta.env.VITE_API;
  * }}
  */
 const get = (urlToScrape = "www.example.com") => {
-	// urlToScrape = "www.example.com"; // forcing default value to avoid unnecessary requests during development
-	const request = axios.get(`${WEBSCRAPER_API}${urlToScrape}`);
-	return request.then((response) => response.data).catch((err) => err.response.data);
+	return axios
+		.get(`${WEBSCRAPER_API}${urlToScrape}`)
+		.then((response) => {
+			return response.data;
+		})
+		.catch((err) => {
+			if (err.code === "ERR_BAD_REQUEST") return err.response.data;
+			else return { error: "unable to reach server" };
+		});
 };
 
 export default { get };
