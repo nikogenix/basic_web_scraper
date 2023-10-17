@@ -44,7 +44,7 @@ export const scrapeTestSite = async (siteUrl) => {
 					).innerText;
 					const image = e.querySelector("a > img").getAttribute("src");
 					const url = e.querySelector("a").getAttribute("href");
-					const submissionDate = e.querySelector("time").getAttribute("datetime");
+					const submission_date = e.querySelector("time").getAttribute("datetime");
 
 					return {
 						title,
@@ -56,7 +56,7 @@ export const scrapeTestSite = async (siteUrl) => {
 						},
 						image: siteUrl + image,
 						url: siteUrl + url,
-						submissionDate,
+						submission_date,
 					};
 				}),
 			siteUrl.slice(0, -1)
